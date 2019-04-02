@@ -8,7 +8,7 @@
 <img src="./Images/add_tree_after.png" width="400px" />
 <br>
 不過我們發現在有些圖片中，如果在天空的地方畫樹也會成功畫上去，得到漂浮在天空中的樹<br>
-<img src="./Images/tree_in_sky.png" width="600px" />
+<img src="./Images/tree-in-sky.png" width="600px" />
 <br>
 不過經過我們都次嘗試後發現，想在天空中畫上樹，要畫在天空的邊邊，這樣才能成功。我們認為這是因為有些照片再取景的時候會有那種周圍有樹遮蔽的效果（從樹叢中拍出去的感覺），所以這種情況下數出現在「天空」中市合理的。
 
