@@ -34,21 +34,21 @@
 我們分解了 Churchoutdoor_LSUN 這個  GAN<br>
 
 ### 1. Layer1
-<img src="./Images/layer1.png" width="600px" />
+<img src="./Images/layer1.png" width="800px" />
 
 #### A. 圈起來的都是小塊小塊的區域，在報告出來的結果分類上也有點不準確
 
 #### B. 試著關掉某些 unit 對圖片的生成效果也不太明顯，應該是因為他是很前面的 layer 所以對生成的影響沒有很大
 
 ### 2. Layer4
-<img src="./Images/layer4.png" width="600px" />
+<img src="./Images/layer4.png" width="800px" />
 
 #### A. 圈起來的區域變大了，而且結果看起來也比較正確，雖然還是有一些類別不太對。
 
 #### B. 關掉或開啟某些 unit 對 model 的生成會有細微的影響
 
 ### 3. Layer7
-<img src="./Images/layer7.png" width="600px" />
+<img src="./Images/layer7.png" width="800px" />
 
 #### A. 可以看出 layer7 在圈選區域與類別上相較前兩層的正確性高很多，其中樹跟草學得最好的感覺
 
