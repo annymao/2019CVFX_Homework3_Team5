@@ -21,6 +21,9 @@
 <br>
 
 ## Dissect GAN Model
+<img src="./Images/gandissect_rtb.png" width="600px" />
+<img src="./Images/gandissect_rta.png" width="600px" />
+<img src="./Images/gandissect_unit.png" width="600px" />
 
 ## Compare with other method
 
@@ -28,4 +31,13 @@
 <img src="./Images/impainting_model.png" width="600px" />
 這個方法可以應用在不歸則形狀的補全、物件移除，並且補全的東西可能不曾出現在圖片上（代表並非直接從圖片中找到相似區域去補全）。<br>
 而這個方法主要分為三個架構： Completion Network、Global context discriminator、Local context discrminator。
-#### A. Completion Network:
+
+#### A. Completion Network
+Completion Network 主要的架構為 Fully Convolution network。為了讓除了需要修補的區域之外的圖片可以不會失真，產生之後會將除了修補區域以外的 RGB 值設回原值。
+
+#### B. Global context discriminator
+Global context discriminator 的 input 為整張圖片，用來分辨產生的整張圖片的真實性。
+
+#### C. Local context discriminator
+不同於 Global context discriminator，Local context discrminator 的 input 為以修補區塊為中心的局部圖片（128*128大小）。利用兩個 discrminator 的 output 結合來判斷所生成的圖片是否真實，這樣可以更加的顧及到大範圍以及小範圍圖片的合理、真實性，結果也會更加準確。
+
