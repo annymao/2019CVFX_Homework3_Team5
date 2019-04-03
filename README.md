@@ -6,7 +6,6 @@
 首先我們試著在天空中畫上樹，可以看到，可以成功的在房子旁邊畫上樹，並且就整體畫面來說還算合理。<br>
 <img src="./Images/add_tree_before.png" width="400px" />
 <img src="./Images/add_tree_after.png" width="400px" />
-<br>
 不過我們發現在有些圖片中，如果在天空的地方畫樹也會成功畫上去，得到漂浮在天空中的樹<br>
 <img src="./Images/tree-in-sky.png" width="600px" />
 <br>
@@ -40,4 +39,10 @@ Global context discriminator 的 input 為整張圖片，用來分辨產生的�
 
 #### C. Local context discriminator
 不同於 Global context discriminator，Local context discrminator 的 input 為以修補區塊為中心的局部圖片（128*128大小）。利用兩個 discrminator 的 output 結合來判斷所生成的圖片是否真實，這樣可以更加的顧及到大範圍以及小範圍圖片的合理、真實性，結果也會更加準確。
+<br>
+<br>
+
+效果上在移除物的部分也蠻不錯的，如下圖
+<img src="./Images/inpaint-1.png" width="600px" />
+
 
