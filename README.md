@@ -118,4 +118,4 @@ Discriminator 在這篇中也運用了上一個方法中的 global+local 的概�
 <img src="./Images/outpaint_3.png" width="400px" />
 
 ## 結論
-<img src="./Images/form.png" width="600px" />
+<img src="./Images/form.png" width="800px" />
