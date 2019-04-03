@@ -117,10 +117,4 @@ Discriminator 在這篇中也運用了上一個方法中的 global+local 的概�
 <img src="./Images/outpaint_3.png" width="400px" />
 
 ## 結論
-           | GANPaint  | Globally and locally | Image Outpainting 
------------|---------|---------------------|-------------------
-移除物件    |  V |  V | X
-新增物件    |  V |  X | 可擴展圖片
-Ｍask   | 可任意畫 | 需要製作與圖片大小相同的 mask (耗時）| X
-生成時間    |  快 |  中等 | 中等
-效果    |  好 |  好 | 生成的部分略為模糊
+<img src="./Images/form.png" width="600px" />
